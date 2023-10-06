@@ -19,3 +19,4 @@ def clear_face_reference() -> None:
 	global FACE_REFERENCE
 
 	FACE_REFERENCE = None
+.
