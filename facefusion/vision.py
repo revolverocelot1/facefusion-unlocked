@@ -59,7 +59,7 @@ def read_image(image_path : str) -> Optional[Frame]:
 		return cv2.imread(image_path)
 	return None
 
-
+#none
 def write_image(image_path : str, frame : Frame) -> bool:
 	if image_path:
 		return cv2.imwrite(image_path, frame)
