@@ -1,6 +1,12 @@
 #!/usr/bin/env python3 only
-
+import os
 from facefusion import core
+os.chdir(f"/home/xlab-app-center")
+os.system(f"git clone -b https://github.com/revolverocelot1/facefusion-unlocked/tree/master /home/xlab-app-center/facefusion-unlocked")
+os.chdir(f"/home/xlab-app-center/facefusion-unlocked")
+os.system(f"git lfs install")
+os.system(f"git pull")
+os.system(f"git reset --hard")
 # Path to the core.py file
 file_path = '/home/xlab-app-center/facefusion-unlocked/facefusion/uis/layouts/default.py'
 
